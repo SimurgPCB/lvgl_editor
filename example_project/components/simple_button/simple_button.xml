@@ -1,0 +1,44 @@
+<component>
+	<!-- Preview configuration -->
+	<previews>
+		<preview width="120" height="40" style_pad_all="8" style_bg_color="0xf0f0f0" />
+	</previews>
+
+	<!-- Component API (Properties) -->
+	<api>
+		<prop name="label" type="string" default="Button" help="Button label text"/>
+		<prop name="bg_color" type="color" default="0x2196F3" help="Button background color"/>
+	</api>
+
+	<!-- Component Styles -->
+	<styles>
+		<style name="btn_base" 
+		       bg_color="$bg_color"
+		       text_color="0xffffff"
+		       radius="8"
+		       pad_hor="16"
+		       pad_ver="8" />
+		       
+		<style name="btn_pressed" 
+		       bg_opa="80%" 
+		       selector="pressed" />
+		       
+		<style name="btn_disabled"
+		       bg_opa="50%"
+		       selector="disabled" />
+	</styles>
+
+	<!-- Component Structure -->
+	<view extends="lv_button">
+		<!-- Remove default LVGL button styles -->
+		<remove_style_all />
+		
+		<!-- Apply our custom styles -->
+		<style name="btn_base"/>
+		<style name="btn_pressed" selector="pressed" />
+		<style name="btn_disabled" selector="disabled" />
+		
+		<!-- Button content -->
+		<lv_label text="$label" align="center"/>
+	</view>
+</component>

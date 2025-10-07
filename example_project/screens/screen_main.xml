@@ -1,0 +1,47 @@
+<screen>
+	<!-- Screen styles -->
+	<styles>
+		<style name="screen_light" 
+		       bg_color="#bg_light" 
+		       text_color="#text_light" />
+		       
+		<style name="screen_dark" 
+		       bg_color="#bg_dark" 
+		       text_color="#text_dark" />
+	</styles>
+
+	<!-- Screen layout -->
+	<view flex_flow="column" style_pad_all="#unit_lg">
+		<!-- Apply theme-based styles -->
+		<bind_style subject="dark_theme" name="screen_light" ref_value="0" />
+		<bind_style subject="dark_theme" name="screen_dark" ref_value="1" />
+		
+		<!-- Title -->
+		<lv_label text="Example App" 
+		          style_pad_bottom="#unit_xl" />
+		
+		<!-- Status display (bound to subject) -->
+		<lv_label text="Status:" 
+		          style_pad_bottom="#unit_sm" />
+		<lv_label bind_text="status_text" 
+		          style_pad_bottom="#unit_lg" />
+		
+		<!-- Counter display (bound to subject) -->
+		<lv_label text="Counter:" 
+		          style_pad_bottom="#unit_sm" />
+		<lv_label bind_text="counter" 
+		          style_pad_bottom="#unit_lg" />
+		
+		<!-- Buttons using custom component -->
+		<simple_button label="Primary Button" bg_color="#primary" />
+		<simple_button label="Success Button" bg_color="#secondary" />
+		<simple_button label="Danger Button" bg_color="#danger" />
+		
+		<!-- Theme toggle -->
+		<row style_flex_main_place="space_between" 
+		     style_pad_top="#unit_xl">
+			<lv_label text="Dark Theme" />
+			<lv_switch bind_checked="dark_theme" />
+		</row>
+	</view>
+</screen>

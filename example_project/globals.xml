@@ -1,0 +1,50 @@
+<globals name="example_app">
+	<api>
+		<!-- Add <enumdefs> here if needed -->
+	</api>
+
+	<consts>
+		<!-- Spacing units -->
+		<int name="unit_xs" value="4" />
+		<int name="unit_sm" value="8" />
+		<int name="unit_md" value="12" />
+		<int name="unit_lg" value="16" />
+		<int name="unit_xl" value="24" />
+		
+		<!-- Colors -->
+		<color name="primary" value="0x2196F3" />
+		<color name="secondary" value="0x4CAF50" />
+		<color name="danger" value="0xF44336" />
+		<color name="bg_light" value="0xffffff" />
+		<color name="bg_dark" value="0x1e1e1e" />
+		<color name="text_light" value="0x000000" />
+		<color name="text_dark" value="0xffffff" />
+		
+		<!-- Opacity -->
+		<percentage name="opa_disabled" value="50%" />
+	</consts>
+
+	<styles>
+		<!-- Global styles -->
+		<style name="style_disabled" opa_layered="50%" />
+	</styles>
+
+	<subjects>
+		<!-- Theme switching -->
+		<int name="dark_theme" value="0" help="0:light theme, 1:dark theme" />
+		
+		<!-- Example data -->
+		<int name="counter" value="0" min_value="0" max_value="100" help="Counter value" />
+		<string name="status_text" value="Ready" help="Status message" />
+	</subjects>
+
+	<images>
+		<!-- Add images here, for example: -->
+		<!-- <file name="icon_home" src_path="images/home.png" /> -->
+	</images>
+
+	<fonts>
+		<!-- Add fonts here, for example: -->
+		<!-- <tiny_ttf name="roboto_regular_14" size="14" as_file="true" src_path="fonts/Roboto-Regular.ttf" /> -->
+	</fonts>
+</globals>
