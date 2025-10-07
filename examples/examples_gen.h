@@ -210,7 +210,7 @@ void examples_init_gen(const char * asset_path);
 #include "components/cards/move_goal/stat_col_gen.h"
 #include "components/cards/music_player/music_player_gen.h"
 #include "components/cards/speaker_volume/speaker_volume_gen.h"
-#include "components/cards/theme_swtcher/theme_switcher_gen.h"
+#include "components/cards/theme_switcher/theme_switcher_gen.h"
 #include "components/cards/thermostat/thermostat_gen.h"
 #include "components/cards/weather/location_gen.h"
 #include "components/cards/weather/weather_gen.h"

@@ -1,6 +1,6 @@
 <project>
 	<targets>
-		<target name="full_view">
+		<target name="fullView">
 			<display width="480" height="480" />
 		</target>
 	</targets>
